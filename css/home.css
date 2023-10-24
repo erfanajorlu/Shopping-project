@@ -1,44 +1,90 @@
-header{
+header {
+  font-size: 1em;
+}
+
+/* navigation section */
+header nav {
+  display: flex;
+  justify-content: space-between;
+  font-size: 1em;
+  padding: 10px 15px;
+}
+
+header nav .nav-right {
+  display: flex;
+  align-items: center;
+}
+
+header nav .nav-right a {
+  color: #444;
+  padding: 10px 15px;
+  margin: 0px 5px;
+  font-size: 1.1em;
+}
+
+header nav .nav-left .register-button {
+  border: 1px solid #666;
+  padding: 5px 8px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav .nav-left .register-button a {
+  color: #444;
+  margin: 0px 10px;
+  font-size: 1.1em;
+}
+
+header nav .nav-left .register-button i {
+  margin: 7px;
+  color: #444;
+  font-size: 0.9em;
+}
+
+/* slider section */
+.slider {
+    position: relative;
     font-size: 1em;
 }
 
-header nav{
-    display: flex;
-    justify-content: space-between;
-    font-size: 1em;
-    padding: 10px 15px;
-}
-
-header nav .nav-right{
-    display: flex;
-    align-items: center;
+.slider .slides .item {
+    position: relative;
+    display: none;
 
 }
 
-header nav .nav-right a{
-    color: #444;
-    padding: 10px 15px;
-    margin: 0px 5px;
-    font-size: 1.1em;
+.slider .slides .item img {
+    width: 100%;
 }
 
-header nav .nav-left .register-button{
-    border: 1px solid #666;
-    padding: 5px 8px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.slider .slides .item span {
+    position: absolute;
+    right: 10%;
+    top: 40%;
+    font-size: 1.5em;
+    color: #222;
 }
 
-header nav .nav-left .register-button a{
-    color: #444;
-    margin: 0px 10px;
-    font-size: 1.1em;
+.slider .slides .active {
+    display: block;
+
 }
 
-header nav .nav-left .register-button i{
-    margin: 7px;
-    color: #444;
-    font-size: 0.9em;
+.slider .buttons {
+    position: absolute;
+    bottom: 30px;
+    left: 40px;
+    z-index: 1;
+}
+
+.slider .buttons i {
+    color: white;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.slider .buttons i:hover{
+    color: rgba(255, 255, 255, .4);
 }

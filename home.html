@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/home.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/home.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
@@ -27,7 +27,30 @@
           </div>
         </div>
       </nav>
-      <section class="slider"></section>
+      <section class="slider">
+        <div class="slides">
+          <div class="item" id="slide1">
+            <img src="./images/s1.jpg" alt="" />
+            <span>آهنگ ها رو زنده تر از آنچه هستند گوش بده</span>
+          </div>
+          <div class="item active" id="slide2">
+            <img src="./images/s2.jpg" alt="" />
+            <span style="color: white"
+              >کیفیت صدایی که همیشه <br />دنبالش بودی اینجاست</span
+            >
+          </div>
+          <div class="item" id="slide3">
+            <img src="./images/s3.jpg" alt="" />
+            <span>رویاهاتو با صدای بلند گوش بده</span>
+          </div>
+        </div>
+        <div class="buttons">
+          <i onclick="setSlide('slide1' , 1)" class="fas fa-circle"></i>
+          <i onclick="setSlide('slide2' , 2)" class="fas fa-circle"></i>
+          <i onclick="setSlide('slide3' , 3)" class="fas fa-circle"></i>
+        </div>
+      </section>
     </header>
+    <script src="./js/main.js"></script>
   </body>
 </html>
