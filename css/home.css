@@ -69,7 +69,8 @@ header nav .nav-left .register-button i {
 
 .slider .slides .active {
     display: block;
-
+    animation-name: fadeIn;
+    animation-duration: 2s;
 }
 
 .slider .buttons {
