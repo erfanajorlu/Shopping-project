@@ -205,10 +205,6 @@ header nav .nav-left .register-button i {
   border-radius:0 0 20px 20px ;
 }
 
-.super-offer-box .body{
-}
-
-
 .super-offer-box .body .image-container{
    text-align: center;
   padding: 30px;
@@ -275,4 +271,25 @@ header nav .nav-left .register-button i {
   border-radius: 5px;
   box-shadow: rgba(0, 0, 0, 0.2);
   width: 80%;
+}
+
+.dragble-list img{
+  width: 70% !important ;
+  margin: auto;
+}
+
+.owl-stage-outer{
+  direction: ltr;
+}
+
+
+.dragble-list .title{
+  padding: 0px 20px;
+  padding-bottom: 20px;
+}
+
+.dragble-list .title span{
+  font-size: 1.2em;
+  color: #444;
+  border-bottom: 1.5px solid #e74c3c;
 }
