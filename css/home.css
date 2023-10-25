@@ -45,142 +45,234 @@ header nav .nav-left .register-button i {
 
 /* slider section */
 .slider {
-    position: relative;
-    font-size: 1em;
+  position: relative;
+  font-size: 1em;
 }
 
 .slider .slides .item {
-    position: relative;
-    display: none;
-
+  position: relative;
+  display: none;
 }
 
 .slider .slides .item img {
-    width: 100%;
+  width: 100%;
 }
 
 .slider .slides .item span {
-    position: absolute;
-    right: 10%;
-    top: 40%;
-    font-size: 1.5em;
-    color: #222;
+  position: absolute;
+  right: 10%;
+  top: 40%;
+  font-size: 1.5em;
+  color: #222;
 }
 
 .slider .slides .active {
-    display: block;
-    animation-name: fadeIn;
-    animation-duration: 2s;
+  display: block;
+  animation-name: fadeIn;
+  animation-duration: 2s;
 }
 
 .slider .buttons {
-    position: absolute;
-    bottom: 30px;
-    left: 40px;
-    z-index: 1;
+  position: absolute;
+  bottom: 30px;
+  left: 40px;
+  z-index: 1;
 }
 
 .slider .buttons i {
-    color: white;
-    margin-right: 5px;
-    cursor: pointer;
+  color: white;
+  margin-right: 5px;
+  cursor: pointer;
 }
 
-.slider .buttons i:hover{
-    color: rgba(255, 255, 255, .4);
+.slider .buttons i:hover {
+  color: rgba(255, 255, 255, 0.4);
 }
 
 /* product section */
 
-.home-page-product{
-    padding: 20px 10px;
-    font-size: 1em;
+.home-page-product {
+  padding: 20px 10px;
+  font-size: 1em;
 }
 
-.home-page-product .shopping-card{
-    text-align: center;
-    box-shadow: 0 2px 8px 0 rgba(0, 0, 0, .2);
-    margin: 10px 15px;
-    border-radius: 5px;
-    padding: 10px;
+.home-page-product .shopping-card {
+  text-align: center;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 10px 15px;
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.home-page-product .shopping-card .img-sec{
-    position: relative;
+.home-page-product .shopping-card .img-sec {
+  position: relative;
 }
 
-.home-page-product .shopping-card .img-sec img{
-    width: 60%;
+.home-page-product .shopping-card .img-sec img {
+  width: 60%;
 }
 
-.home-page-product .shopping-card .img-sec .hot-offer{
-    background-color: #e74c3c;
-    color: white;
-    padding: 3px 5px;
-    border-radius: 5px;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: .9em;
+.home-page-product .shopping-card .img-sec .hot-offer {
+  background-color: #e74c3c;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 5px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  font-size: 0.9em;
 }
 
-.home-page-product .shopping-card .img-sec .stars{
-    position: absolute;
-    left: 10px;
-    top: 10px;
-    color: #f1c40f;
+.home-page-product .shopping-card .img-sec .stars {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  color: #f1c40f;
+}
+
+.home-page-product .shopping-card .title {
+  color: #333;
+  margin: 15px;
+}
+
+.home-page-product .shopping-card .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+}
+
+.home-page-product .shopping-card .buttons .right {
+  color: #666;
+  font-weight: bold;
+}
+
+.home-page-product .shopping-card .buttons .left {
+  display: flex;
+}
+
+.home-page-product .shopping-card .buttons .left .extend-btn {
+  display: flex;
+  margin-left: 5px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #2ecc71;
+  color: white;
+  width: 40px;
+  padding: 8px 12px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.75s;
+}
+
+.home-page-product .shopping-card .buttons .left .extend-btn:hover {
+  width: 100px;
+}
+
+.home-page-product .shopping-card .buttons .left .extend-btn .b-text {
+  display: none;
+  color: white;
+}
+
+.home-page-product .shopping-card .buttons .left .extend-btn:hover .b-text {
+  display: block;
+}
+
+.home-page-product .shopping-card .buttons .left .b-icon {
+  color: white;
+  padding-top: 3px;
+}
+
+/* super offer section */
+.super-product {
+  padding: 20px;
+  font-size: 1em;
+
+}
+
+.super-product .super-offer-box{
+  text-align: center;
+  box-shadow: 0 2px 8px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  margin: 0 10px;
+}
+
+.super-offer-box .super-offer-box-title{
+  background-color: #e74c3c;
+  color: white;
+  padding: 8px 30px;
+  display: inline-block;
+  border-radius:0 0 20px 20px ;
+}
+
+.super-offer-box .body{
 }
 
 
-.home-page-product .shopping-card .title{
-    color: #333;
-    margin: 15px;
+.super-offer-box .body .image-container{
+   text-align: center;
+  padding: 30px;
+  }
+
+
+.super-offer-box .body .image-container img{
+  width: 100%;
+   
 }
 
-.home-page-product .shopping-card .buttons{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 5px 15px;
+
+.super-offer-box .body .specisification{
+  padding: 30px 5px;   
 }
 
-.home-page-product .shopping-card .buttons .right{
-    color: #666;
-    font-weight: bold;
+.super-offer-box .body .specisification .price-row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.home-page-product .shopping-card .buttons .left{
-    display: flex;
+.super-offer-box .body .specisification .price-row .price{
+  margin-left: 60px;
+  color: #444;
+  font-size: 1.2em;
 }
 
-.home-page-product .shopping-card .buttons .left .extend-btn{
-    display: flex;
-    margin-left: 5px;
-    align-items: center;
-    justify-content: space-between;
-    background-color: #2ecc71;
-    color: white;
-    width: 40px;
-    padding: 8px 12px;
-    border-radius: 25px;
-    cursor: pointer;
-    transition: 0.75s;
+.super-offer-box .body .price-row .off{
+  color: white;
+  background-color: #e74c3c;
+  padding: 5px 20px;
+  border-radius: 25px;
 }
 
-.home-page-product .shopping-card .buttons .left .extend-btn:hover{
-    width: 100px;
+.super-offer-box .body .title{
+  margin: 40px 0;
+  color: #444;
+  font-size: 1.4em;
+  font-weight: bold;
+
 }
 
-.home-page-product .shopping-card .buttons .left .extend-btn .b-text{
-    display: none;
-    color: white;
+.super-offer-box .body .counter-down{
+  border-top: 1px solid rgba(0, 0, 0, 0.4); 
+  margin: 10px 40px;
+  padding-top: 20px;
+  font-weight: bold;
+  color: #666;
+  font-size: 1.5em;
 }
 
-.home-page-product .shopping-card .buttons .left .extend-btn:hover .b-text{
-    display: block;
+.super-offer-box .body .remaining-time{
+  color: #777;
+  font-size: .8em;
 }
 
-.home-page-product .shopping-card .buttons .left .b-icon{
-    color: white;
-    padding-top: 3px;
+.super-product .banner{
+  text-align: center;
+  padding: 0 5px;
+}
+
+.super-product .banner img{
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.2);
+  width: 80%;
 }
